@@ -135,12 +135,12 @@ def cargar_al_inicio():
     if not datos:
         return
     try:
-            if "ventas_actuales" in datos:
-                document.querySelector("#ventas_actuales").value = datos["ventas_actuales"]
-            if "crecimiento" in datos:
-                document.querySelector("#crecimiento").value = datos["crecimiento"]
-            if "meses" in datos:
-                document.querySelector("#meses").value = datos["meses"]
+        if "ventas_actuales" in datos:
+            document.querySelector("#ventas_actuales").value = datos["ventas_actuales"]
+        if "crecimiento" in datos:
+            document.querySelector("#crecimiento").value = datos["crecimiento"]
+        if "meses" in datos:
+            document.querySelector("#meses").value = datos["meses"]
         aviso = document.querySelector("#resultado")
         aviso.innerHTML = "📂 Datos cargados. Pulsa <em>Calcular</em>."
         aviso.classList.remove("hidden")
